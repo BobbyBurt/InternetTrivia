@@ -1,2 +1,3 @@
 /.vscode
 /vscode-profile-2022-06-18-12-10-40.cpuprofile
+/src/lib/credentials.js
