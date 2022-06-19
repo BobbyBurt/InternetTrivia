@@ -1,14 +1,27 @@
 {"questions": [
     {
-        "question": "Which of the following is NOT a flash game",
-        "answers": ["Line Rider 2 Unbound", "Bloons", "Age of War", "Dino Run"]
+        "prompt": "Answer the following",
+        "question": "What is the title of the first youtube video?",
+        "hints": ["it has to do with a zoo"],
+        "answers": ["Me at the zoo", "Bloons", "Age of War", "Dino Run"]
     },
     {
-        "question": "In which installment of the Fancy Pants Adventures series does the player have to get their icecream back from an angry rabbit?",
-        "answers": ["World 2", "World 1", "World 3", "Remix"]
+        "prompt": "Who am I?",
+        "hints": [
+            "We began uploading in 2005", 
+            "Clickbate thumbnails shot us into the big league", 
+            "We got so popular, we could make a 'mosh pit' of 45 million subscribers",
+            "We are known for starting 'food fights'",
+            "After some controversy, people wanted us to 'shut up'",
+            "Our real names are Ian & Anthony"
+        ],
+        "answers": ["Smosh", "Rooster Teeth", " TODO", "TODO"]
     },
     {
-        "question": "The following was NOT a flash game website",
-        "answers": ["Ouya", "Y8", "CoolMathGames", "Friv"]
+        "prompt": "Who said this quote?",
+        "question": "'Hey, just working. working hard so I can please you.'",
+        "hints": ["He is sitting at a computer"],
+        "answers": ["Justin Beiber", "Justin Timberlake", "Ed Sheran", "TODO"]
+
     }
 ]}

@@ -2,7 +2,8 @@
 
     // scenes
 import scalemanager from './scenes/scalemanager.js'
-import menu from './scenes/menu.js'
+import question from './scenes/question.js'
+import questionSelect from './scenes/questionSelect.js'
 
 window.game = new Phaser.Game({
     type: Phaser.WEBGL,
@@ -37,5 +38,5 @@ window.game = new Phaser.Game({
         ]
     },
 
-    scene: [scalemanager, menu]
+    scene: [scalemanager, question, questionSelect]
     });

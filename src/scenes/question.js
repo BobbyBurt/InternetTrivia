@@ -1,10 +1,10 @@
 import eventsCenter from "../eventsCenter.js";
 
-export default class menu extends Phaser.Scene
+export default class question extends Phaser.Scene
 {
     constructor()
     {
-        super('menu'); // defining unique key
+        super('question'); // defining unique key
 
         /** @type {object} parsed json from local storage on setup */
         this.gamepadConfig;
@@ -33,7 +33,9 @@ export default class menu extends Phaser.Scene
         this.answer[2] = this.createAnswerContainer(400, 150, 'answer 3', 0);
         this.answer[0] = this.createAnswerContainer(0, 0, 'answer 4', 0);
 
+        // QUESTION
 
+        this.loadQuestion();
         
         // ADPATIVE DISPLAY
         
@@ -99,10 +101,6 @@ export default class menu extends Phaser.Scene
 
             });
         });
-
-        // QUESTIONS
-
-        // this.loadQuestion();
     }
 
     update()
@@ -129,8 +127,8 @@ export default class menu extends Phaser.Scene
         // SETTINGS
         this.roundedCorners = true;
         this.roundedRadius = 15;
-        this.fillcolours = ['0xC9CDCA', '0x039347', '0xF60501'];
-        this.strokecolours = ['0xe4e7e5', '0x04af54', '0xfe1e1b'];
+        this.fillcolours = ['0xa6a6a6', '0x039347', '0xF60501'];
+        this.strokecolours = ['0xbfbfbf', '0x04af54', '0xff4d4d'];
 
 
         this.graphics = this.add.graphics();
@@ -156,9 +154,9 @@ export default class menu extends Phaser.Scene
         this.load.start();
         this.load.on('complete', () => {
 
-            console.log('complete');
-            console.log(this.cache.json.get('jsonTest').questions[0].question);
-            this.add.image(0, 0, 'questionImage');
+            console.log('load complete');
+            this. questionText = this.add.text(0, -300, this.cache.json.get('jsonTest').questions[0].question, {fontFamily: 'arial', fontSize: '50px'}).setOrigin(0.5, 0.5).setAlign('center');
+            // this.add.image(0, 0, 'questionImage');
         })
 
     }
