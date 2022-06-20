@@ -11,7 +11,8 @@ export default class questionSelect extends Phaser.Scene
          * order will be perserved in game
          * @readonly
          */
-        this.categoryNames = ['games', 'videos', 'music'];
+        this.categoryNames = ['test', 'videos', 'music'];
+        // TODO - make this change according to the given round, selected in a main menu
     }
 
     init(data)
@@ -32,11 +33,29 @@ export default class questionSelect extends Phaser.Scene
 
             this.load.json(_category, 'quiz/' + _category + '.json',);
         }
-        
-        // LOAD QUESTION ASSETS
 
         this.load.on('complete', () => {
     
+            /**  */
+            this.categoriesData['', '', ''];
+            
+            for (let i = 0; i < this.categoryNames.length; ++i) {
+
+                this.categoriesData[i] = this.cache.json.get(this.categoryNames[i]);
+
+                // LEFTOFF
+
+                for (const _question of this.categoriesData[i].questions)
+                {
+                    console.log(_question.answers);
+                }
+
+                // loop for each question in category
+
+                    // if media is more than text, load 
+
+            }   
+
             this.load.image('questionImage', 'assets/phaser3-logo.png');
             this.load.start();
 

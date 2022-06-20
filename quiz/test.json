@@ -1,0 +1,32 @@
+{"questions": [
+    {
+        "media": "text",
+        "prompt": "prompt text",
+        "question": "Is this where the question text goes?",
+        "hints": ["this is the first hint.", "this is the second hint.", "third hint. More obvious now.", "Fourth hint. Can these all fit on screen at once?"],
+        "answers": ["Correct answer", "Incorrect answer 1", "Incorrect answer 2", "Incorrect answer 3"]
+    },
+    {
+        "media": "image",
+        "asset": "phaser3-logo",
+        "prompt": "Who am I?",
+        "hints": [
+            "We began uploading in 2005", 
+            "Clickbate thumbnails shot us into the big league", 
+            "We got so popular, we could make a 'mosh pit' of 45 million subscribers",
+            "We are known for starting 'food fights'",
+            "After some controversy, people wanted us to 'shut up'",
+            "Our real names are Ian & Anthony"
+        ],
+        "answers": ["Smosh", "Rooster Teeth", " TODO", "TODO"]
+    },
+    {
+        "media": "images",
+        "asset": ["tiers", "phaser3-logo"],
+        "prompt": "Who said this quote?",
+        "question": "'Hey, just working. working hard so I can please you.'",
+        "hints": ["He is sitting at a computer"],
+        "answers": ["Justin Beiber", "Justin Timberlake", "Ed Sheran", "TODO"]
+
+    }
+]}
