@@ -21,7 +21,7 @@ class scalemanager extends Phaser.Scene {
         this.registry.set('w', window.innerWidth * window.devicePixelRatio);
         this.registry.set('h', window.innerHeight * window.devicePixelRatio);
 
-        this.scene.start('question-select');
+        this.scene.start('question-select', { round: 1});
         // this.scene.launch('newgroundsio');
     }
 

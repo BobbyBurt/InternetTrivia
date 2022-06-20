@@ -1,0 +1,27 @@
+{"questions": [
+    {
+        "prompt": "Answer the following",
+        "question": "What is the title of the first youtube video?",
+        "hints": ["it has to do with a zoo"],
+        "answers": ["Me at the zoo", "Bloons", "Age of War", "Dino Run"]
+    },
+    {
+        "prompt": "Who am I?",
+        "hints": [
+            "We began uploading in 2005", 
+            "Clickbate thumbnails shot us into the big league", 
+            "We got so popular, we could make a 'mosh pit' of 45 million subscribers",
+            "We are known for starting 'food fights'",
+            "After some controversy, people wanted us to 'shut up'",
+            "Our real names are Ian & Anthony"
+        ],
+        "answers": ["Smosh", "Rooster Teeth", " TODO", "TODO"]
+    },
+    {
+        "prompt": "Who said this quote?",
+        "question": "'Hey, just working. working hard so I can please you.'",
+        "hints": ["He is sitting at a computer"],
+        "answers": ["Justin Beiber", "Justin Timberlake", "Ed Sheran", "TODO"]
+
+    }
+]}

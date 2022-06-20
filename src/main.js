@@ -8,9 +8,9 @@ import questionSelect from './scenes/questionSelect.js'
 window.game = new Phaser.Game({
     type: Phaser.WEBGL,
     backgroundColor: '#969fa3',
-    title: 'Microgames',
-    url: 'URL HERE',
-    version: 'version uuhh',
+    title: 'Internet Trivia',
+    url: 'https://github.com/BobbyBurt/internet-trivia',
+    version: 'version 7',
     pixelArt: false,
     banner: {
         // text: '#ffffff',
