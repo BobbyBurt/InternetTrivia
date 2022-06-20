@@ -24,6 +24,8 @@ export default class questionSelect extends Phaser.Scene
 
     preload()
     {
+        this.loadText = this.add.text(0, 0, 'LOADING...');
+        
         // LOAD CATEGORIES
 
         for (const _category of this.categoryNames) {
@@ -31,23 +33,27 @@ export default class questionSelect extends Phaser.Scene
             this.load.json(_category, 'quiz/' + _category + '.json',);
         }
         
+        // LOAD QUESTION ASSETS
+
+        this.load.on('complete', () => {
+    
+            this.load.image('questionImage', 'assets/phaser3-logo.png');
+            this.load.start();
+
+            this.loadText.setVisible(false);
+            console.log('question assets - load complete');
+        })
     }
 
     create()
     {
-        
+
             
         this.createButton(0, 0, element).on('pointerdown', () => {
 
             console.log(element);
         });   
 
-        this.load.on('complete', () => {
-
-            console.log('load complete');
-            // this.questionText = this.add.text(0, -300, this.cache.json.get('jsonTest').questions[0].question, {fontFamily: 'arial', fontSize: '50px'}).setOrigin(0.5, 0.5).setAlign('center');
-            // this.add.image(0, 0, 'questionImage');
-        })
 
 
         // ADPATIVE DISPLAY
